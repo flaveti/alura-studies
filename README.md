@@ -27,7 +27,7 @@ Este projeto foi desenvolvido durante o curso de React com TypeScript da Alura. 
 - React: Biblioteca JavaScript para construção de interfaces.
 - TypeScript: Superset de JavaScript que adiciona tipagem estática.
 - SCSS: Pré-processador CSS para facilitar a criação e organização de estilos.
-React Hooks: useState para gerenciamento de estado da aplicação.
+- React Hooks: useState para gerenciamento de estado da aplicação.
 
 </br>
 
