@@ -1,0 +1,59 @@
+.cronometro {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    grid-area: cronometro;
+  
+    .relogioWrapper {
+      align-items: center;
+      background-color: #f5f5f5;
+      border-radius: 15px;
+      box-shadow: 2px 4px 4px #bebebe5e;
+      box-sizing: border-box;
+      display: flex;
+      font-size: 5rem;
+      justify-content: center;
+      margin-bottom: 24px;
+      padding: 16px 12px;
+      width: 100%;
+    }
+  
+    .titulo {
+      font-size: 2rem;
+      color: #7c7c7c;
+    }
+  
+    button {
+      background-color: #a7ccda;
+      border-radius: 10px;
+      color: #272626;
+      cursor: pointer;
+      font-size: 1rem;
+      padding: 16px;
+      width: 150px;
+      
+      &:active {
+        background-color: #7CA6B7;
+        box-shadow: 2px 2px 4px #0000009F inset;
+        cursor: auto;
+      }
+    }
+  
+    @media screen and (min-width:1280px) {
+      
+      .relogioWrapper{
+        font-size: 15rem;
+      }
+  
+      p {
+        font-size: 2rem;
+      }
+  
+      button {
+        grid-column-start: span 2;
+        justify-self: center;
+        width: 200px;
+        font-size: 1.5rem;
+      }
+    }
+  }

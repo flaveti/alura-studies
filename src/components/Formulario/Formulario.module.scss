@@ -1,0 +1,95 @@
+.novaTarefa {
+  display: flex;
+  flex-direction: column;
+  grid-area: nova-tarefa;
+  background-color: #f5f5f5;
+  border-radius: 10px;
+  box-shadow: 2px 4px 4px #bebebe5e;
+  padding: 12px;
+
+  .inputContainer {
+    display: flex;
+    flex-direction: column;
+    width: 100%;
+    margin-bottom: 16px;
+
+    label {
+      margin-bottom: 8px;
+      font-size: 1.25rem;
+      color: #7c7c7c;
+    }
+
+    input {
+      width: 100%;
+      color: #7c7c7c;
+      padding: 8px 12px 4px;
+      box-sizing: border-box;
+      border: unset;
+      border-radius: 5px;
+      background-color: #e0e0e0;
+      box-shadow: 0px 2px 4px #c6c6c6 inset;
+
+      &::placeholder {
+        color: #9a9a9a;
+      }
+    }
+  }
+
+  .botao {
+    background-color: #6d5dfc;
+    border-radius: 50%; /* Botão arredondado */
+    width: 45px; /* Largura ajustada para deixar quadrado */
+    height: 45px; /* Altura ajustada para deixar quadrado */
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-size: 1rem;
+    color: white;
+    padding-bottom: 10px;;
+    box-shadow: 2px 4px 4px #bebebe5e;
+    cursor: pointer;
+    transition: background-color 0.3s ease, box-shadow 0.3s ease;
+
+    &:hover {
+      background-color: #5b0eeb;
+    }
+
+    &:active {
+      background-color: #4a0bb5;
+      box-shadow: inset 2px 2px 4px #9a9a9a;
+    }
+  }
+
+  @media screen and (min-width: 1280px) {
+    flex-direction: row;
+    flex-wrap: nowrap;
+    justify-content: space-between;
+    padding: 24px;
+    box-sizing: border-box;
+
+    .inputContainer {
+      width: calc(62%); /* Ajustando a largura dos inputs */
+
+      &:last-of-type {
+        width: calc(20%); /* Mantém os inputs com a mesma largura */
+      }
+
+      label {
+        font-size: 1.3rem;
+
+      }
+
+      input {
+        height: 100%;
+        font-size: 1.2rem;
+        color: #7c7c7c;
+      }
+    }
+
+    .botao {
+      width: 10px; /* Ajuste da largura para um botão mais quadrado */
+      height: 10px; /* Altura do botão para combiná-lo com a largura */
+      font-size: 0.5rem; /* Tamanho do símbolo "+" */
+    }
+  }
+}
