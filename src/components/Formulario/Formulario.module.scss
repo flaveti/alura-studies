@@ -45,7 +45,7 @@
     align-items: center;
     font-size: 1rem;
     color: white;
-    padding-bottom: 10px;;
+    padding-bottom: 10px;
     box-shadow: 2px 4px 4px #bebebe5e;
     cursor: pointer;
     transition: background-color 0.3s ease, box-shadow 0.3s ease;
@@ -76,7 +76,6 @@
 
       label {
         font-size: 1.3rem;
-
       }
 
       input {
@@ -87,9 +86,23 @@
     }
 
     .botao {
-      width: 10px; /* Ajuste da largura para um botão mais quadrado */
-      height: 10px; /* Altura do botão para combiná-lo com a largura */
-      font-size: 0.5rem; /* Tamanho do símbolo "+" */
+      width: 45px; /* Ajuste da largura para um botão mais quadrado */
+      height: 45px; /* Altura do botão para combiná-lo com a largura */
+      font-size: 1rem; /* Tamanho do símbolo "+" */
+    }
+  }
+
+  /* Ajustes para dispositivos menores */
+  @media screen and (max-width: 767px) {
+    .inputContainer {
+      flex-direction: column;
+      width: 100%; /* Garantir que os inputs preencham 100% da largura */
+    }
+
+    .botao {
+      width: 100%; /* O botão ocupará toda a largura em telas menores */
+      height: 40px; /* Reduzir a altura do botão para ficar mais consistente */
+      font-size: 1rem; /* Ajustar o tamanho do texto do botão */
     }
   }
 }
