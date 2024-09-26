@@ -23,3 +23,30 @@
     font-size: 2rem;
   }
 }
+
+@media screen and (min-width: 1024px) {
+  .botao {
+    grid-column-start: span 2;
+    justify-self: center;
+    width: 100px;
+    font-size: 2rem;
+  }
+}
+
+// adicionei mais media queries para melhorar a responsividade do botao
+@media screen and (min-width: 768px) {
+  .botao {
+    grid-column-start: span 2;
+    justify-self: center;
+    width: 100px;
+    font-size: 2rem;
+  }
+}
+
+@media screen and (max-width: 767px) {
+  .botao {
+    width: 90%;
+    font-size: 1rem;
+    padding: 8px;
+  } 
+}
